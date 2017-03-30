@@ -46,7 +46,7 @@ def find_track(aStr):
 # sum_to_n(n) is adapted from the following source
 # http://wordaligned.org/articles/partitioning-with-python
 # note that this solution is very expensive when n is large
-# this function is great since it return solution in the order
+# function is great since it return solution in the order
 # ascending length of list so short list will be checked first
 def sum_to_n(n):
     'Generate the series of +ve integer lists which sum to a +ve integer, n.'
@@ -69,8 +69,10 @@ def num2words(aList, inputs):
     return output
 
 def main():
+    
     for line in fileinput.input():
         inputs = line.strip().split(' ')
+    print(inputs)
     # we need two hash tables to store 
     # 1. words/phrases that have been checked and exist
     # 2. words/phrases do not exist in Spotify's database. 
